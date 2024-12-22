@@ -14,7 +14,9 @@ class SplashViewBody extends StatelessWidget
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children:
       [
-        Image.asset(AssetImgs.logoImg)
+        Image.asset(AssetImgs.logoImg),
+        SizedBox(height: 4,),
+        const Text("Read Free Books", textAlign: TextAlign.center,),
       ],
     );
   }
