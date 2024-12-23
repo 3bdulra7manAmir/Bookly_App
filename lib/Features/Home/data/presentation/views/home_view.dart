@@ -1,3 +1,4 @@
+import 'package:bookly/Features/Home/data/presentation/views/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget
@@ -8,8 +9,8 @@ class HomeView extends StatelessWidget
   Widget build(BuildContext context)
   {
     return SafeArea(
-      child: Scaffold(
-        
+      child: const Scaffold(
+        body: HomeViewBody(),
       ),
     );
   }
