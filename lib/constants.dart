@@ -9,6 +9,7 @@ class AssetColors
 class AssetImgs
 {
   String kLogoImg = "assets/images/Logo.png";
+  String kListImg = "assets/images/test_image.png";
 }
 
 
