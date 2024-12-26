@@ -13,7 +13,7 @@ class FeaturedBoxListView extends StatelessWidget {
         itemBuilder: (context, index)
         {
           return const Padding(
-            padding: EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 0),
+            padding: EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 20),
             child: FeaturedListViewItem());
         }
       ),

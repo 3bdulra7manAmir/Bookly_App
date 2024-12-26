@@ -10,7 +10,10 @@ class AssetImgs
 {
   String kLogoImg = "assets/images/Logo.png";
   String kListImg = "assets/images/test_image.png";
+  String kListImg2 = "assets/images/test_image2.png";
 }
 
 
 const kTransDur = Duration(milliseconds: 250);
+
+const kGtSectraFine = 'GT Sectra Fine';
