@@ -1,4 +1,4 @@
-import 'package:bookly/Features/Home/data/presentation/views/widgets/custom_list_view_item.dart';
+import 'package:bookly/Features/Home/presentation/views/widgets/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class FeaturedBoxListView extends StatelessWidget {
@@ -10,6 +10,7 @@ class FeaturedBoxListView extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.3,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
+        itemCount: 7,
         itemBuilder: (context, index)
         {
           return const Padding(
