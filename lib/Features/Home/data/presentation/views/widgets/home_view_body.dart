@@ -23,10 +23,30 @@ class HomeViewBody extends StatelessWidget
         Padding(padding: EdgeInsets.only(left: 15), child: Text('Best Seller',
         style: Styles.titleStyle30.copyWith(fontFamily: kGtSectraFine,),)),
 
-        BestSellerListViewItem(),
+        BestSellerListViewBuilder(),
       ],
     );
   }
 }
 
 
+class BestSellerListViewBuilder extends StatelessWidget
+{
+  const BestSellerListViewBuilder({super.key});
+
+  @override
+  Widget build(BuildContext context)
+  {
+    return Expanded(
+      child: ListView.builder(
+        padding: EdgeInsets.zero,
+        itemCount: 8,
+        itemBuilder: (context, index)
+        {
+          return const BestSellerListViewItem();
+        },
+        
+      ),
+    );
+  }
+}
