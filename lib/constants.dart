@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AssetColors
 {
   Color kPrimaryColor = Color(0xff100B20);
-  Color kSecondrayColor = const Color.fromRGBO(255, 82, 82, 1);
+  Color kSecondrayColor = const Color(0xfffebda6);
 }
 
 class AssetImgs
@@ -17,3 +17,4 @@ class AssetImgs
 const kTransDur = Duration(milliseconds: 250);
 
 const kGtSectraFine = 'GT Sectra Fine';
+
