@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class AssetColors
 {
   Color kPrimaryColor = Color(0xff100B20);
+  Color kSecondrayColor = const Color.fromRGBO(255, 82, 82, 1);
 }
-
 
 class AssetImgs
 {

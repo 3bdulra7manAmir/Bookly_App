@@ -1,5 +1,5 @@
 import 'package:bookly/Features/Home/presentation/views/widgets/best_seller_list_view.dart';
-import 'package:bookly/Features/Home/presentation/views/widgets/custom_appbar.dart';
+import 'package:bookly/Features/Home/presentation/views/widgets/custom_home_appbar.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/featured_list_view.dart';
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
@@ -22,6 +22,12 @@ class HomeViewBody extends StatelessWidget
       children:
       [
         const CustomAppBar(),
+
+        //BY Meeeeeeeeeeeeeeeee
+        Padding(
+          padding: EdgeInsetsDirectional.only(start: 10, end: 10),
+          child: Container(width: double.infinity, height: 1, color: AssetColors().kSecondrayColor,)),
+        //BY Meeeeeeeeeeeeeeeee
 
         FeaturedBoxListView(),
 
