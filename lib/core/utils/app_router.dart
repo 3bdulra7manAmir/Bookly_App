@@ -14,6 +14,7 @@ abstract class AppRouter
   routes: [
     GoRoute(
       path: '/', // Slash => '/' is  makes the path that it is assigned to it is your main or beginning of the application
+      //builder: (context, state) => const SplashView(),
       builder: (context, state) => const SplashView(),
     ),
 

@@ -10,7 +10,7 @@ class BookDetailsView extends StatelessWidget
   {
     return SafeArea(
       child: const Scaffold(
-        body: BookDetialsViewBody(),
+        body: BookDetailsViewBody(),
       ));
   }
 }
