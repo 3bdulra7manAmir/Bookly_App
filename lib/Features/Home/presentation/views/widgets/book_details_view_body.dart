@@ -1,8 +1,10 @@
 import 'package:bookly/Features/Home/presentation/views/widgets/book_rating.dart';
+import 'package:bookly/Features/Home/presentation/views/widgets/books_action.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/custom_book_detials_appbar.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/custom_book_item.dart';
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
+import 'package:bookly/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget
@@ -44,8 +46,14 @@ class BookDetailsViewBody extends StatelessWidget
       const SizedBox(height: 3,),
       Text("Rudyard Kipling", style: Styles.titleStyle18),
       const SizedBox(height: 16,),
-      BookRating(mainAxisAlignment: MainAxisAlignment.center,)
+      BookRating(mainAxisAlignment: MainAxisAlignment.center,),
+
+      const SizedBox(height: 35,),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30),
+        child: BooksAction()),
     ],
     );
   }
 }
+
