@@ -14,7 +14,9 @@ class CustomAppBar extends StatelessWidget
         children: [
           Image.asset(AssetImgs().kLogoImg, height: 18,),
           const Spacer(),
-          IconButton(onPressed: (){}, icon: const Icon(Icons.search), iconSize: 24,),
+          IconButton(onPressed: ()
+          {
+          }, icon: const Icon(Icons.search), iconSize: 24,),
         ],
       ),
     );

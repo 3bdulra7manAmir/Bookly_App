@@ -3,18 +3,20 @@ import 'package:bookly/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class FeaturedBoxListView extends StatelessWidget {
-  const FeaturedBoxListView({super.key});
+class SimilarBooksListView extends StatelessWidget
+{
+  const SimilarBooksListView({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return GestureDetector(
       onTap: ()
       {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.3,
+        height: MediaQuery.of(context).size.height * 0.2,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: 7,
@@ -30,5 +32,3 @@ class FeaturedBoxListView extends StatelessWidget {
     );
   }
 }
-
-

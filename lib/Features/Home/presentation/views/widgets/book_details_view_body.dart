@@ -2,9 +2,9 @@ import 'package:bookly/Features/Home/presentation/views/widgets/book_rating.dart
 import 'package:bookly/Features/Home/presentation/views/widgets/books_action.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/custom_book_detials_appbar.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/custom_book_item.dart';
+import 'package:bookly/Features/Home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
-import 'package:bookly/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsViewBody extends StatelessWidget
@@ -18,26 +18,29 @@ class BookDetailsViewBody extends StatelessWidget
     var width = MediaQuery.of(context).size.width;
 
     return Column(
+    
     children:
     [
       
       Padding(
         padding: EdgeInsets.symmetric(horizontal: 15),
-        child: const CustomBookDetialsAppBar()),
+        child: const CustomBookDetialsAppBar()
+      ),
 
       //const SizedBox(height: 3,),
 
       //BY Meeeeeeeeeeeeeeeee
         Padding(
           padding: EdgeInsetsDirectional.only(start: 15, end: 15),
-          child: Container(width: double.infinity, height: 1, color: AssetColors().kSecondrayColor,)),
+          child: Container(width: double.infinity, height: 1, color: AssetColors().kSecondrayColor,)
+        ),
         //BY Meeeeeeeeeeeeeeeee
       const SizedBox(height: 10,),
 
 
       //63
       SizedBox(
-        height: MediaQuery.of(context).size.height * 0.4,
+        height: MediaQuery.of(context).size.height * 0.35,
         child: CustomBookImage()
       ),
 
@@ -51,7 +54,21 @@ class BookDetailsViewBody extends StatelessWidget
       const SizedBox(height: 35,),
       Padding(
         padding: EdgeInsets.symmetric(horizontal: 30),
-        child: BooksAction()),
+        child: BooksAction()
+      ),
+
+      const SizedBox(height: 50),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15),
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: Text("You can Also Like:", style: Styles.titleStyle14.copyWith(
+            fontWeight: FontWeight.w600,),)
+          ),
+        ),
+
+      const SimilarBooksListView(),
+      //const SizedBox(height: 40,),
     ],
     );
   }
