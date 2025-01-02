@@ -6,24 +6,22 @@ import 'package:flutter/material.dart';
 //import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main()
-{
+void main() {
   runApp(const BooklyApp());
 }
 
-
-class BooklyApp extends StatelessWidget
-{
+class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
 
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: AssetColors().kPrimaryColor,
-      textTheme: GoogleFonts.montserratAlternatesTextTheme(ThemeData.dark().textTheme),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: AssetColors().kPrimaryColor,
+        textTheme: GoogleFonts.montserratAlternatesTextTheme(
+            ThemeData.dark().textTheme),
       ),
     );
   }

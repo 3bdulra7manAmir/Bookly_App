@@ -9,26 +9,21 @@ class FeaturedBoxListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()
-      {
+      onTap: () {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: SizedBox(
         height: MediaQuery.of(context).size.height * 0.3,
         child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 7,
-          itemBuilder: (context, index)
-          {
-            return const Padding(
-              padding: EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 20),
-              child: CustomBookImage()
-            );
-          }
-        ),
+            scrollDirection: Axis.horizontal,
+            itemCount: 7,
+            itemBuilder: (context, index) {
+              return const Padding(
+                  padding:
+                      EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 20),
+                  child: CustomBookImage());
+            }),
       ),
     );
   }
 }
-
-
