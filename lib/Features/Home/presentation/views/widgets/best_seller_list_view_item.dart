@@ -5,15 +5,17 @@ import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget
+class BookListViewItem extends StatelessWidget
 {
-  const BestSellerListViewItem({super.key});
+  const BookListViewItem({super.key, this.padding});
+
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context)
   {
     return Padding(
-      padding: EdgeInsets.all(15),
+      padding: padding ?? EdgeInsets.all(15),
       child: GestureDetector(
         onTap: ()
         {

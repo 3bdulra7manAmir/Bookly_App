@@ -15,7 +15,7 @@ class BestSellerListViewBuilder extends StatelessWidget
       itemCount: 8,
       itemBuilder: (context, index)
       {
-        return const BestSellerListViewItem();
+        return const BookListViewItem();
       },
       
     );
