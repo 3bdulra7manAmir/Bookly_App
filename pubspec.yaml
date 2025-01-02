@@ -9,6 +9,7 @@ environment:
 dependencies:
   bloc: ^8.1.4
   change_app_package_name: ^1.4.0
+  dartz: ^0.10.1
   equatable: ^2.0.7
   flutter:
     sdk: flutter
