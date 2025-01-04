@@ -7,7 +7,8 @@ import 'package:go_router/go_router.dart';
 //import 'package:get/get_core/src/get_main.dart';
 //import 'package:get/get_navigation/get_navigation.dart';
 
-class SplashViewBody extends StatefulWidget {
+class SplashViewBody extends StatefulWidget
+{
   const SplashViewBody({super.key});
 
   @override
@@ -15,24 +16,28 @@ class SplashViewBody extends StatefulWidget {
 }
 
 class _SplashViewBodyState extends State<SplashViewBody>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin
+{
   late AnimationController animationController;
   late Animation<Offset> textSildingAnim;
   @override
-  void initState() {
+  void initState()
+  {
     super.initState();
     initSlidingAnimation();
     navigateToHome(context: context); //MEe
   }
 
   @override
-  void dispose() {
+  void dispose()
+  {
     super.dispose();
     animationController.dispose();
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -46,7 +51,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
     );
   }
 
-  void initSlidingAnimation() {
+  void initSlidingAnimation()
+  {
     animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 1));
 
