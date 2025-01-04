@@ -28,13 +28,15 @@ class FeaturedBoxListView extends StatelessWidget
               child: ListView.builder
               (
                   scrollDirection: Axis.horizontal,
-                  itemCount: 7,
+                  //itemCount: 7,
+                  itemCount: state.books.length,
+                  physics: const BouncingScrollPhysics(),
                   itemBuilder: (context, index)
                   {
-                    return const Padding
+                    return Padding
                     (
                         padding: EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 20),
-                        child: CustomBookImage()
+                        child: CustomBookImage(imageUrl: state.books[index].volumeInfo!.imageLinks!.thumbnail!,)
                     );
                   }),
             ),

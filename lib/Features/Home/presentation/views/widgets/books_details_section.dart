@@ -29,7 +29,7 @@ class BookDetailsSection extends StatelessWidget {
         //63
         SizedBox(
             height: MediaQuery.of(context).size.height * 0.35,
-            child: CustomBookImage()),
+            child: CustomBookImage(imageUrl: 'https://i5.walmartimages.com/seo/Call-of-Duty-Modern-Warfare-2-Key-Art-Wall-Poster-22-375-x-34_c1ed0da4-eea5-4837-b908-88c2d41f65c1.266057a89768427b41580b628842fb59.jpeg',)),
 
         const SizedBox(
           height: 35,
