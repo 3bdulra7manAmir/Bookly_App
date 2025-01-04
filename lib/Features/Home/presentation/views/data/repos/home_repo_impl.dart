@@ -13,7 +13,7 @@ class HomeRepoImpl implements HomeRepo
 
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchBestSellerBooks() async
+  Future<Either<Failure, List<BookModel>>> fetchNewestBooks() async
   {
     try
     {
@@ -40,7 +40,7 @@ class HomeRepoImpl implements HomeRepo
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchNewestBooks() async
+  Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async
   {
     try
     {
