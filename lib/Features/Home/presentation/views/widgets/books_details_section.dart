@@ -5,14 +5,17 @@ import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
-class BookDetailsSection extends StatelessWidget {
+class BookDetailsSection extends StatelessWidget
+{
   const BookDetailsSection({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     //var width = MediaQuery.of(context).size.width;
     return Column(
-      children: [
+      children:
+      [
         //BY Meeeeeeeeeeeeeeeee
         Padding(
             padding: EdgeInsetsDirectional.only(start: 15, end: 15),
@@ -20,41 +23,36 @@ class BookDetailsSection extends StatelessWidget {
               width: double.infinity,
               height: 1,
               color: AssetColors().kSecondrayColor,
-            )),
+            )
+          ),
+
         //BY Meeeeeeeeeeeeeeeee
-        const SizedBox(
-          height: 10,
-        ),
+        const SizedBox(height: 10,),
 
         //63
         SizedBox(
             height: MediaQuery.of(context).size.height * 0.35,
-            child: CustomBookImage(imageUrl: 'https://i5.walmartimages.com/seo/Call-of-Duty-Modern-Warfare-2-Key-Art-Wall-Poster-22-375-x-34_c1ed0da4-eea5-4837-b908-88c2d41f65c1.266057a89768427b41580b628842fb59.jpeg',)),
+            child: CustomBookImage(imageUrl: 'https://i5.walmartimages.com/seo/Call-of-Duty-Modern-Warfare-2-Key-Art-Wall-Poster-22-375-x-34_c1ed0da4-eea5-4837-b908-88c2d41f65c1.266057a89768427b41580b628842fb59.jpeg',)
+          ),
 
-        const SizedBox(
-          height: 35,
-        ),
-        Text(
-          "The Jungle Book",
-          style: Styles.titleStyle30,
-        ),
-        const SizedBox(
-          height: 3,
-        ),
+        const SizedBox(height: 35,),
+
+        Text("The Jungle Book", style: Styles.titleStyle30,),
+
+        const SizedBox(height: 3,),
+        
         Text("Rudyard Kipling", style: Styles.titleStyle18),
-        const SizedBox(
-          height: 16,
-        ),
-        BookRating(
-          mainAxisAlignment: MainAxisAlignment.center,
-        ),
 
-        const SizedBox(
-          height: 35,
-        ),
+        const SizedBox(height: 16,),
+
+        BookRating(mainAxisAlignment: MainAxisAlignment.center,),
+
+        const SizedBox(height: 35,),
+
         Padding(
             padding: EdgeInsets.symmetric(horizontal: 30),
-            child: BooksAction()),
+            child: BooksAction()
+          ),
       ],
     );
   }
