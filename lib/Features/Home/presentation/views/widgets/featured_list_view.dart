@@ -36,7 +36,12 @@ class FeaturedBoxListView extends StatelessWidget
                     return Padding
                     (
                         padding: EdgeInsets.only(left: 10, right: 0, top: 20, bottom: 20),
-                        child: CustomBookImage(imageUrl: state.books[index].volumeInfo!.imageLinks!.thumbnail!,)
+                        child: GestureDetector(
+                          onTap: ()
+                          {
+                            GoRouter.of(context).push(AppRouter.kBookDetailsView, extra: state.books[index]);
+                          },
+                          child: CustomBookImage(imageUrl: state.books[index].volumeInfo!.imageLinks!.thumbnail!,))
                     );
                   }),
             ),

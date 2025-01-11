@@ -13,7 +13,6 @@ class BookListViewItem extends StatelessWidget
   final EdgeInsetsGeometry? padding;
   final BookModel? bookModel;
 
-
   @override
   Widget build(BuildContext context)
   {
